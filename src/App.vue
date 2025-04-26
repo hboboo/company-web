@@ -1,9 +1,15 @@
-<script setup></script>
-
 <template>
-  <div id="app">
-    <router-view></router-view>
-  </div>
+  <el-container style="min-height: 100vh">
+    <el-header>
+      <Header></Header>
+    </el-header>
+    <el-main><router-view /></el-main>
+    <el-footer></el-footer>
+  </el-container>
 </template>
 
-<style scoped></style>
+<script setup>
+import Header from "./components/Header.vue";
+</script>
+
+<style></style>
