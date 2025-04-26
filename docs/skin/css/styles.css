@@ -1,0 +1,13 @@
+@charset "utf-8";
+/*绿色主题 更多模板请访问：https://www.bootstrapmb.com */
+:root {
+  --colour1: #02a23e;
+  --colour2: #64bc59;
+  --colour3: #99c822;
+  --colour4: #a5d049;
+  --colour5: rgba(150,195,25,.8);
+  --colour6: rgba(2,162,62,.8);
+  --colour7: rgba(0,124,200,.8);
+  --colour8: rgba(0,162,62,.25)
+}
+.icon{background-image: url("../images/icon_green.png");display: inline-block;vertical-align: middle;}
