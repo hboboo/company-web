@@ -2706,3 +2706,12 @@ a:hover {
   bottom: -1px;
   background: var(--colour1);
 }
+.case-img {
+  margin: 0 auto;
+  width: 500px;
+  height: 600px;
+  background-image: url("/skin/images/case1.jpg");
+  background-size: cover; /* 让背景图按比例覆盖 */
+  background-position: center; /* 图片居中显示 */
+  background-repeat: no-repeat; /* 避免重复 */
+}
