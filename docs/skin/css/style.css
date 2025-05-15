@@ -1944,7 +1944,7 @@ a:hover {
 }
 .detail .context img {
   max-width: 1200px;
-  height: auto !important;
+  /* height: auto !important; */
 }
 /* reLink*/
 .reLink {
@@ -2711,8 +2711,15 @@ a:hover {
   margin: 0 auto;
   width: 500px;
   height: 600px;
-  background-image: url("/skin/images/case1.jpg");
-  background-size: cover; /* 让背景图按比例覆盖 */
-  background-position: center; /* 图片居中显示 */
-  background-repeat: no-repeat; /* 避免重复 */
+  overflow: hidden; /* 确保超出的部分隐藏 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.case-img img {
+  width: 100%; /* 宽度撑满容器 */
+  height: 100%; /* 高度撑满容器 */
+  object-fit: cover; /* 保持裁剪效果 */
+  object-position: center; /* 居中显示 */
 }
