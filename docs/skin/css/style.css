@@ -818,6 +818,7 @@ a:hover {
   background: var(--colour2);
 }
 .index .icase .icase_fl .title {
+  margin-top: 190px;
   background: var(--colour1);
   height: 127px;
 }
