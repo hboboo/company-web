@@ -525,7 +525,7 @@ a:hover {
 }
 .index .about .about_img .img {
   width: 645px;
-  height: 375px;
+  height: 445px;
   overflow: hidden;
 }
 .index .about .about_img .img img {
@@ -605,7 +605,7 @@ a:hover {
 }
 .index .advantage .bg {
   width: 415px;
-  height: 478px;
+  height: 515px;
   padding-top: 15px;
 }
 .index .advantage .bg img {
@@ -933,7 +933,7 @@ a:hover {
   bottom: 0;
   left: 50%;
   margin-left: -50px;
-  width: 100px;
+  width: 125px;
   height: 2px;
   background: var(--colour4);
   transition: all 0.5s;
@@ -1339,7 +1339,7 @@ a:hover {
 }
 .footer .fnav ul h3:after {
   content: "";
-  width: 63px;
+  width: 100px;
   height: 2px;
   background: #636363;
   display: inherit;
@@ -1938,9 +1938,15 @@ a:hover {
 }
 .detail .context {
   color: #666;
+  font-size: 18px;
   line-height: 30px;
   text-align: justify;
   padding-bottom: 25px;
+}
+.detail .context p {
+  text-indent: 2em;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 .detail .context img {
   max-width: 1200px;
