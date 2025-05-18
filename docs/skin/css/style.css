@@ -1949,6 +1949,9 @@ a:hover {
   margin-top: 5px;
   margin-bottom: 10px;
 }
+.detail .context li {
+  text-indent: 2em;
+}
 .detail .context img {
   max-width: 1200px;
   /* height: auto !important; */
@@ -2729,4 +2732,52 @@ a:hover {
   height: 100%; /* 高度撑满容器 */
   object-fit: cover; /* 保持裁剪效果 */
   object-position: center; /* 居中显示 */
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 0;
+  flex-wrap: wrap;
+}
+.image-container img {
+  width: 500px; /* 固定宽度 */
+  height: 300px; /* 固定高度 */
+  object-fit: cover; /* 超出部分裁剪，保证图片填满框 */
+}
+.fancy-divider {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #060606, transparent);
+  margin: 40px 0;
+}
+
+.table-container {
+  margin: 0 auto;
+  border-collapse: collapse;
+  max-width: 1200px;
+  border: 1px solid #ccc;
+}
+
+.table-header {
+  background: #e0e0e0;
+  color: #333;
+}
+
+.table-cell {
+  text-align: center;
+  padding: 12px;
+  border: 1px solid #ccc;
+}
+
+.row-even {
+  background: #fafafa;
+  color: #333;
+}
+
+.row-odd {
+  background: #f0f0f0;
+  color: #333;
 }
