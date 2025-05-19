@@ -10,19 +10,7 @@ $(function () {
     triggerTime: 50, //鼠标延迟触发时间（默认150）
     returnDefault: true, //鼠标移走后返回默认状态，例如默认频道是“预告片”，鼠标移走后会返回“预告片”（默认false）
   });
-  /*推荐新闻切换*/
-  $(".index .newsBox .hot").slide({
-    titCell: ".hot_nav",
-    mainCell: ".hot_slide",
-    autoPage: "<li></li>",
-    effect: "fold",
-    delayTime: 500,
-  });
-  /*新闻新闻切换*/
-  $(".index .inews .box").slide({
-    effect: "fold",
-    delayTime: 500,
-  });
+
   /*左侧分类*/
   $(".lefta .comt li i").click(function () {
     $(this).parent().find(".boxlist").slideToggle();
