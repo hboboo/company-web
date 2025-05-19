@@ -1340,7 +1340,7 @@ a:hover {
 }
 .footer .fnav ul h3:after {
   content: "";
-  width: 100px;
+  width: 125px;
   height: 2px;
   background: #636363;
   display: inherit;
@@ -2780,4 +2780,81 @@ a:hover {
 .row-odd {
   background: #f0f0f0;
   color: #333;
+}
+
+.contact-section {
+  background: #fff;
+  padding: 15px 10px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #333;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.contact-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+.contact-info {
+  flex: 1 1 400px;
+}
+.contact-info h2 {
+  font-size: 32px;
+  margin-bottom: 24px;
+  position: relative;
+}
+.contact-info h2::after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background: #007bff;
+  display: block;
+  margin-top: 8px;
+}
+.info-item {
+  display: flex;
+  margin-bottom: 20px;
+}
+.info-item i {
+  font-size: 20px;
+  margin-right: 12px;
+  color: #007bff;
+  width: 24px;
+}
+.info-item h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+.info-item p,
+.info-item a {
+  margin: 4px 0 0;
+  line-height: 1.6;
+  color: #555;
+  text-decoration: none;
+}
+.info-item a:hover {
+  text-decoration: underline;
+}
+.contact-image {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-image img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
+  .contact-image {
+    margin-top: 30px;
+  }
 }
