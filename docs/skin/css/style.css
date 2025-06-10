@@ -1362,10 +1362,11 @@ a:hover {
   transform: translateX(5px);
 }
 .footer .fewm {
-  width: 505px;
-  height: 330px;
-  padding-top: 90px;
-  padding-left: 200px;
+  display: flex;
+  width: 711.7px;
+  height: 350.5px;
+  justify-content: center;
+  align-items: center;
   background: url(../images/foot_bg.jpg) no-repeat;
   background-size: cover;
 }
@@ -1408,6 +1409,7 @@ a:hover {
 }
 .footer .fewm li img {
   display: block;
+  height: 170px;
   width: 170px;
   padding: 14px;
   border: 1px solid rgba(249, 249, 249, 0.3);
@@ -1499,6 +1501,7 @@ a:hover {
   z-index: 100;
   width: 80px;
 }
+
 .toolbar dd {
   position: relative;
   float: left;
@@ -1514,9 +1517,11 @@ a:hover {
   cursor: pointer;
   transition: all 0.5s;
 }
+
 .toolbar dd:first-child {
   margin-top: 0;
 }
+
 .toolbar dd i {
   width: 100%;
   height: 30px;
@@ -1524,22 +1529,28 @@ a:hover {
   margin-top: 13px;
   background: url(../images/toolbar.png) no-repeat center 0;
 }
+
 .toolbar dd.qq i {
   background-position-y: 0;
 }
+
 .toolbar dd.tel i {
   background-position-y: -30px;
 }
+
 .toolbar dd.code i {
   background-position-y: -60px;
 }
+
 .toolbar dd.top i {
   background-position-y: -90px;
 }
+
 .toolbar dd span {
   display: block;
   color: #fff;
 }
+
 .toolbar dd.tel .box {
   position: absolute;
   top: 0;
@@ -1552,14 +1563,17 @@ a:hover {
   opacity: 0;
   transition: all 0.5s;
 }
+
 .toolbar dd.tel .box p {
   font-size: 14px;
   margin: 15px auto 7px;
 }
+
 .toolbar dd.tel .box h3 {
   font-size: 18px;
   font-weight: bold;
 }
+
 .toolbar dd.tel .box:after {
   display: block;
   content: " ";
@@ -1574,23 +1588,53 @@ a:hover {
   right: -18px;
   margin-left: -12px;
 }
+
+/* 修改后的二维码弹窗样式 */
 .toolbar dd.code .box {
   position: absolute;
   top: 0;
-  width: 162px;
-  right: -172px;
-  height: 162px;
+  width: 380px; /* 增加宽度以容纳两个二维码 */
+  right: -350px;
+  height: 190px; /* 调整高度 */
   margin-right: 10px;
   border-radius: 5px;
   background: var(--colour1);
   opacity: 0;
   transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  box-sizing: border-box;
 }
-.toolbar dd.code .box img {
-  width: 140px;
-  height: 140px;
-  padding: 11px;
+
+/* 二维码容器样式 */
+.toolbar dd.code .qr-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  width: 150px;
 }
+
+/* 二维码图片样式 */
+.toolbar dd.code .qr-item img {
+  width: 120px;
+  height: 120px;
+  display: block;
+}
+
+/* 二维码标题样式 */
+.toolbar dd.code .qr-item .qr-title {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #333;
+  text-align: center;
+  font-weight: bold;
+}
+
 .toolbar dd.code .box:after {
   display: block;
   content: " ";
@@ -1600,20 +1644,29 @@ a:hover {
   width: 0;
   height: 0;
   position: absolute;
-  top: 30px;
+  top: 50%;
+  margin-top: -9px;
   right: -18px;
   margin-left: -12px;
 }
+
 .toolbar dd:hover {
   background: #333;
 }
+
 .toolbar dd.tel:hover .box {
   opacity: 1;
   right: 80px;
 }
+
 .toolbar dd.code:hover .box {
   opacity: 1;
   right: 80px;
+}
+
+/* 返回顶部功能 */
+.toolbar dd.top {
+  cursor: pointer;
 }
 /*内页大图*/
 .nybanner {
